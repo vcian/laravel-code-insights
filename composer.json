@@ -24,7 +24,7 @@
       "type": "library",
       "autoload": {
         "psr-4": {
-            "Vcian\\Docgenerator\\": "src/"
+            "Vcian\\LaravelCodeInsights\\": "src/"
         },
         "files": [
           "src/Providers/CodeGeneratorServiceProvider.php"
