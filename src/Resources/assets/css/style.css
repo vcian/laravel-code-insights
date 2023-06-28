@@ -1,0 +1,96 @@
+/* Sidebar css */
+
+.hs-accordion.active>.hs-accordion-toggle.hs-active\:text-blue-500 {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+/* .hs-accordion.active > .hs-accordion-toggle.hs-accordion-active\:text-blue-600 */
+/* .hs-accordion.active>.hs-accordion-toggle.hs-accordion-active\:hover\:bg-transparent:hover {
+    background-color: transparent;
+} */
+
+.hs-accordion.active>.hs-accordion-toggle .arrow-icon {
+    rotate: -180deg;
+}
+
+/* Tab css */
+.tab-main nav button.active {
+    border-bottom-color: rgb(59 130 246);
+    color: rgb(59 130 246);
+}
+
+/* text-slate-700 removed and used below class in submenu (in anchor tag)*/
+.active-submenu {
+    color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    position: relative;
+    background-color: #ffffff;
+    color: #373737;
+    padding: 0 55px 0 20px;
+}
+
+.accordion-header>span {
+    position: absolute;
+    border-radius: 50%;
+    padding: 12px;
+    right: 20px;
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.accordion-header>span::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 14px;
+    width: 2px;
+    background-color: rgb(51 65 85 / var(--tw-text-opacity));
+    transform: translate(-50%, -50%);
+    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+.dark .accordion-header>span::before, .dark .accordion-header>span::after {
+    background-color:#ffffff;
+}
+
+.accordion-header>span::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 14px;
+    width: 2px;
+    background-color: rgb(51 65 85 / var(--tw-text-opacity));
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion-open .accordion-header>span::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion-body {
+    display: none;
+}
+
+.acc-btn>a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #373737;
+    box-shadow: 5px 5px 0px 0 #000000;
+    padding: 0 20px;
+    margin: 0 10px 10px 10px;
+    font-size: 18px;
+}

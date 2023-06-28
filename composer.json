@@ -1,0 +1,41 @@
+{
+    "name": "vcian/laravel-code-insights",
+    "description": "Display all list of controllers, repositories, models, traits, and helpers, allowing you to easily explore and access them",
+    "keywords": [
+        "document",
+        "generator",
+        "controllers",
+        "methods",
+        "laravel",
+        "access",
+        "optimize"
+      ],
+      "license": "MIT",
+      "authors": [
+        {
+          "name": "Vcian - Viitorcloud",
+          "email": "administrator@viitorcloud.com",
+          "role": "Creator"
+        }
+      ],
+      "require": {
+        "php": "^8.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+            "Vcian\\Docgenerator\\": "src/"
+        },
+        "files": [
+          "src/Providers/CodeGeneratorServiceProvider.php"
+        ]
+     },
+     "extra": {
+      "laravel": {
+          "providers": [
+              "Vcian\\LaravelCodeInsights\\Providers\\CodeGeneratorServiceProvider"
+          ]
+      }
+    },
+    "minimum-stability": "dev"
+}
