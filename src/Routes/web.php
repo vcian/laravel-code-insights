@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/generate-package', [CodeDocController::class, 'index'])->name('code_docs');
+Route::get('/code-insights', [CodeDocController::class, 'index'])->name('code_docs');
