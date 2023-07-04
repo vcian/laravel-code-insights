@@ -5,9 +5,8 @@ namespace Vcian\LaravelCodeInsights\Http\Controllers;
 use Vcian\LaravelCodeInsights\Services\CodeDocService;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use App\Http\Controllers\Controller;
 
-class CodeDocController extends Controller
+class CodeDocController
 {
     /**
      * @param CodeDocService $codeDocService
@@ -25,7 +24,7 @@ class CodeDocController extends Controller
         $segments = explode("\\", $request->class);
         $lastTwoSegments = array_slice($segments, -2);
 
-        return view('laravel-doc::doc', [
+        return view(config('code-insights.public.folder').'::doc', [
             'controllers' => $this->codeDocService->getControllers(),
             'models' => $this->codeDocService->getModels(),
             'methods' => $this->codeDocService->getMethods($request->class),
@@ -37,7 +36,6 @@ class CodeDocController extends Controller
             'traits' => $this->codeDocService->getTraits(),
             'activeClass' => $request->class,
             'breadcrumb' => (isset($lastTwoSegments[1]) && isset($lastTwoSegments[0])) ? $lastTwoSegments[0].'/'. $lastTwoSegments[1] :'',  //base
-
         ]);
     }
 

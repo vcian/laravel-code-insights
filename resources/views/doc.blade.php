@@ -19,8 +19,8 @@
 
 	<!--End of Zopim Live Chat Script-->
 	<!-- BEGIN GLOBAL MANDATORY STYLES -->
-	<link href=" {{ asset('laravel-doc/assets/css/dark-theme.css') }}" rel="stylesheet">
-	<link href="{{ asset('laravel-doc/assets/css/style.css') }}" rel="stylesheet">
+	<link href=" {{ asset(config('code-insights.public.folder').'/assets/css/dark-theme.css') }}" rel="stylesheet">
+	<link href="{{ asset(config('code-insights.public.folder').'/assets/css/style.css') }}" rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<!-- <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16"> -->
@@ -281,7 +281,7 @@
 									</div>
 
 								</li>
-								
+
 									<li class="hs-accordion @if (str_contains($activeClass, 'Services')) active	@endif">
 
 										<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
@@ -320,7 +320,7 @@
 											</ul>
 										</div>
 									</li>
-								
+
 								<li class="hs-accordion @if (str_contains($activeClass, 'Providers')) active	@endif">
 
 									<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"

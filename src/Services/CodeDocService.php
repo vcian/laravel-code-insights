@@ -51,6 +51,7 @@ class CodeDocService
             ));
 
             $reflectionClass = new ReflectionClass($class);
+
             // Check if the class is a controller
             if (is_subclass_of($class, $subClass) && !$reflectionClass->isAbstract()) {
                 $classes->push([
@@ -72,10 +73,9 @@ class CodeDocService
         $methods = collect();
         if (class_exists($class) || trait_exists($class)) {
             $reflectionClass = new ReflectionClass($class);
-
             foreach ($reflectionClass->getMethods() as $method) {
                 // Check if the method belongs to the class itself, and not to a parent class
-                if ($method->class === $class && !$method->isStatic() && $method->getName() !== '__construct') {
+                if ($method->class === $class && !$method->isStatic() && $method->getName() !== '__construct' && !str_contains($method->getFileName(),'vendor')) {
                     $methods->push([
                         'name' => $method->getName()
                     ]);
