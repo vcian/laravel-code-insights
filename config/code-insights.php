@@ -13,4 +13,7 @@ return [
 
     'path' => env('CODE_INSIGHTS_PATH', 'code-insights'),
 
+    'public' => [
+        'folder' => 'laravel-code-insights'
+    ]
 ];

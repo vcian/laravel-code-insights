@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/code-insights', [CodeDocController::class, 'index'])->name('code_docs');
+Route::get(config('code-insights.path'), [CodeDocController::class, 'index'])->name('code_docs');

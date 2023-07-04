@@ -27,13 +27,13 @@
             "Vcian\\LaravelCodeInsights\\": "src/"
         },
         "files": [
-          "src/Providers/CodeGeneratorServiceProvider.php"
+          "src/CodeGeneratorServiceProvider.php"
         ]
      },
      "extra": {
       "laravel": {
           "providers": [
-              "Vcian\\LaravelCodeInsights\\Providers\\CodeGeneratorServiceProvider"
+              "Vcian\\LaravelCodeInsights\\CodeGeneratorServiceProvider"
           ]
       }
     },
