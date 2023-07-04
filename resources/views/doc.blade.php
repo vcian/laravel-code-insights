@@ -53,10 +53,11 @@
 			Light mode
 		</a>
 	</div>
+
 	<div class="flex">
 		<div
 			class="bg-white dark:bg-slate-700 w-[280px] min-w-[325px] h-[100vh] overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0">
-			<h6 class="bg-gray-500 dark:bg-slate-800 text-white font-medium px-4 py-3">Code package generator</h6>
+			<a href="{{ env('APP_URL').config('code-insights.path') }}"> <h6 class="bg-gray-500 dark:bg-slate-800 text-white font-medium px-4 py-3">Laravel Code Insights</h6></a>
 			<div class="px-4 mt-4">
 				<input
 					class="w-full bg-slate-100 dark:bg-slate-600 dark:text-white border-2 border-gray-500 rounded-full h-[44px] px-4 leading-[44px] outline-0"
@@ -64,102 +65,16 @@
 			</div>
 			<nav class="hs-accordion-group p-4 w-full flex flex-col flex-wrap">
 				<ul class="space-y-1.5">
-					<li class="hs-accordion">
-						<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
-							href="javascript:;">
-							<svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M11.3103 1.77586C11.6966 1.40805 12.3034 1.40805 12.6897 1.77586L20.6897 9.39491L23.1897 11.7759C23.5896 12.1567 23.605 12.7897 23.2241 13.1897C22.8433 13.5896 22.2103 13.605 21.8103 13.2241L21 12.4524V20C21 21.1046 20.1046 22 19 22H14H10H5C3.89543 22 3 21.1046 3 20V12.4524L2.18966 13.2241C1.78972 13.605 1.15675 13.5896 0.775862 13.1897C0.394976 12.7897 0.410414 12.1567 0.810345 11.7759L3.31034 9.39491L11.3103 1.77586ZM5 10.5476V20H9V15C9 13.3431 10.3431 12 12 12C13.6569 12 15 13.3431 15 15V20H19V10.5476L12 3.88095L5 10.5476ZM13 20V15C13 14.4477 12.5523 14 12 14C11.4477 14 11 14.4477 11 15V20H13Z"
-									fill="currentColor" />
-							</svg>
-							Getting started
 
-							<svg class="arrow-icon ml-auto block w-3 h-3 group-hover:text-gray-500 dark:text-gray-400 transition-all"
-								width="16" height="16" viewBox="0 0 16 16" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-									stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-							</svg>
-						</a>
-
-						<div
-							class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
-							<ul class="pl-2">
-								<li>
-									<a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 dark:text-slate-400"
-										href="javascript:;">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											fill="currentColor" viewBox="0 0 52 52">
-											<path
-												d="M8.55,36.91A6.55,6.55,0,1,1,2,43.45,6.54,6.54,0,0,1,8.55,36.91Zm17.45,0a6.55,6.55,0,1,1-6.55,6.54A6.55,6.55,0,0,1,26,36.91Zm17.45,0a6.55,6.55,0,1,1-6.54,6.54A6.54,6.54,0,0,1,43.45,36.91ZM8.55,19.45A6.55,6.55,0,1,1,2,26,6.55,6.55,0,0,1,8.55,19.45Zm17.45,0A6.55,6.55,0,1,1,19.45,26,6.56,6.56,0,0,1,26,19.45Zm17.45,0A6.55,6.55,0,1,1,36.91,26,6.55,6.55,0,0,1,43.45,19.45ZM8.55,2A6.55,6.55,0,1,1,2,8.55,6.54,6.54,0,0,1,8.55,2ZM26,2a6.55,6.55,0,1,1-6.55,6.55A6.55,6.55,0,0,1,26,2ZM43.45,2a6.55,6.55,0,1,1-6.54,6.55A6.55,6.55,0,0,1,43.45,2Z"
-												fill-rule="evenodd" />
-										</svg>
-										Overview
-									</a>
-								</li>
-								<li>
-									<a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 dark:text-slate-400"
-										href="javascript:;">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											fill="currentColor" viewBox="0 0 16 16">
-											<path
-												d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5z">
-											</path>
-											<path
-												d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293L10 14.793z">
-											</path>
-										</svg>
-										README
-									</a>
-								</li>
-								<li>
-									<a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 dark:text-slate-400"
-										href="javascript:;">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											fill="currentColor" viewBox="0 0 16 16">
-											<path
-												d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5z">
-											</path>
-											<path
-												d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293L10 14.793z">
-											</path>
-										</svg>
-										CHANGELOG
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="hs-accordion @if (str_contains($activeClass, 'Controllers') || str_contains($activeClass, 'Services')|| str_contains($activeClass, 'Repositories')||str_contains($activeClass, 'Models')||str_contains($activeClass, 'Providers') || str_contains($activeClass, 'Helpers') || str_contains($activeClass, 'Traits')) active	@endif" id="modules">
-						<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 @if (count($controllers) > 0 || count($services) >0) hs-active:text-blue-500	@endif   hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
-							href="javascript:;">
-							<svg fill="currentColor" viewBox="0 0 32 32" width="16" height="16"
-								xmlns="http://www.w3.org/2000/svg">
-								<title>alt-grid</title>
-								<path
-									d="M0 26.016q0 2.496 1.76 4.224t4.256 1.76h20q2.464 0 4.224-1.76t1.76-4.224v-20q0-2.496-1.76-4.256t-4.224-1.76h-20q-2.496 0-4.256 1.76t-1.76 4.256v20zM4 26.016v-20q0-0.832 0.576-1.408t1.44-0.608h20q0.8 0 1.408 0.608t0.576 1.408v20q0 0.832-0.576 1.408t-1.408 0.576h-20q-0.832 0-1.44-0.576t-0.576-1.408zM8 24h6.016v-5.984h-6.016v5.984zM8 14.016h6.016v-6.016h-6.016v6.016zM10.016 22.016v-2.016h1.984v2.016h-1.984zM10.016 12v-1.984h1.984v1.984h-1.984zM18.016 24h5.984v-5.984h-5.984v5.984zM18.016 14.016h5.984v-6.016h-5.984v6.016zM20 22.016v-2.016h2.016v2.016h-2.016zM20 12v-1.984h2.016v1.984h-2.016z">
-								</path>
-							</svg>
-							Modules
-
-							<svg class="arrow-icon ml-auto block w-3 h-3 group-hover:text-gray-500 dark:text-gray-400 transition-all"
-								width="16" height="16" viewBox="0 0 16 16" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-									stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-							</svg>
-						</a>
-
-						<div
-							class="hs-accordion-content w-full overflow-hidden show-li transition-[height] duration-300 hidden" @if (str_contains($activeClass, 'Controllers') || str_contains($activeClass, 'Services') || str_contains($activeClass, 'Repositories')||str_contains($activeClass, 'Models')||str_contains($activeClass, 'Providers') || str_contains($activeClass, 'Helpers') || str_contains($activeClass, 'Traits'))
+					<li class="hs-accordion @if (str_contains($activeClass, 'Controllers') || str_contains($activeClass, 'Services')|| str_contains($activeClass, 'Repositories')||str_contains($activeClass, 'Models')||str_contains($activeClass, 'Providers') || str_contains($activeClass, 'Helpers') || str_contains($activeClass, 'Traits')) active	@endif active"  id="modules">
+							<div
+							class="hs-accordion-content w-full overflow-hidden show-li transition-[height] duration-300" @if (str_contains($activeClass, 'Controllers') || str_contains($activeClass, 'Services') || str_contains($activeClass, 'Repositories')||str_contains($activeClass, 'Models')||str_contains($activeClass, 'Providers') || str_contains($activeClass, 'Helpers') || str_contains($activeClass, 'Traits'))
 							style="display:block;"
 							@endif  id="moduleSecltion">
-							<ul class="hs-accordion-group pl-3" id="accordion-toggle-data">
+							<ul class="hs-accordion-group" id="accordion-toggle-data">
 								<li  class="hidden">
 									<li class="hs-accordion @if (str_contains($activeClass, 'Controllers')) active	@endif">
-										<span
-										class="py-2 text-sm block font-medium text-slate-500 dark:text-slate-300">AppModule</span>
+
 									<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700  hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
 										href="javascript:;">
 										<svg width="16" height="16" viewBox="0 0 20 20"
@@ -212,6 +127,7 @@
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
 										 <path d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" fill="currentColor"/>
 										</svg>
+
 										Models
 
 										<svg class="arrow-icon ml-auto block w-3 h-3 group-hover:text-gray-500 dark:text-gray-400 transition-all"
@@ -322,7 +238,6 @@
 									</li>
 
 								<li class="hs-accordion @if (str_contains($activeClass, 'Providers')) active	@endif">
-
 									<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
 										href="javascript:;">
 										{{-- <svg width="16" height="16" viewBox="0 0 20 20"
@@ -360,8 +275,6 @@
 										</ul>
 									</div>
 								</li>
-
-
 								<li class="hs-accordion @if (str_contains($activeClass, 'Helpers')) active	@endif">
 
 									<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-md text-slate-700 hs-active:text-blue-500 hover:bg-gray-100 dark:hover:bg-slate-600 dark:text-slate-400 dark:hs-active:text-white"
@@ -412,50 +325,64 @@
 				{{$breadcrumb}}
 			</h1>
 			<div class="tab-main">
-				<nav class="flex" aria-label="Tabs" role="tablist">
-					<button type="button"
-						class="py-2 px-5 text-slate-700 outline-0 inline-flex items-center border-b-[3px] border-transparent text-base font-medium whitespace-nowrap active dark:text-slate-400"
-						id="info-tab" data-hs-tab="#info" aria-controls="info" role="tab">
-						Info
-					</button>
-					<button type="button"
-						class="py-2 px-5 text-slate-700 outline-0 inline-flex items-center border-b-[3px] border-transparent text-base font-medium whitespace-nowrap dark:text-slate-400"
-						id="source-tab" data-hs-tab="#source" aria-controls="source" role="tab">
-						Source
-					</button>
-				</nav>
-				<div class="bg-white dark:bg-slate-800 p-4">
-					<div id="info" role="tabpanel" aria-labelledby="info-tab">
-						<div class="mb-5">
-							<h2 class="text-xl font-bold mb-1 dark:text-white">File</h2>
-							<p class="text-red-500 dark:text-red-400">{{$activeClass}}</p>
-						</div>
-						<div class="mb-5">
-							<h2 class="text-xl font-bold mb-2 dark:text-white">Methods</h2>
-							<div class="border border-gray-300 dark:border-slate-600">
-                                @foreach($methods as $key => $method)
-								<div class="accordion-item animated slideInRight">
-									<p class="accordion-header text-lg text-blue-400 px-4 py-2 border-t-[1px] border-gray-300 dark:border-slate-600 dark:bg-slate-800">
-										{{ $method['name'].'()' }}
-									<span></span></p>
-									<div class="accordion-body bg-slate-100 dark:bg-slate-700 p-4 dark:text-white border">
-										<code>
-											{!! getMethodCode($activeClass, $method['name'])  !!}
-										</code>
+				@if($breadcrumb)
+					<nav class="flex" aria-label="Tabs" role="tablist">
+						<button type="button"
+							class="py-2 px-5 text-slate-700 outline-0 inline-flex items-center border-b-[3px] border-transparent text-base font-medium whitespace-nowrap active dark:text-slate-400"
+							id="info-tab" data-hs-tab="#info" aria-controls="info" role="tab">
+							Info
+						</button>
+						<button type="button"
+							class="py-2 px-5 text-slate-700 outline-0 inline-flex items-center border-b-[3px] border-transparent text-base font-medium whitespace-nowrap dark:text-slate-400"
+							id="source-tab" data-hs-tab="#source" aria-controls="source" role="tab">
+							Source
+						</button>
+					</nav>
+					<div class="bg-white dark:bg-slate-800 p-4">
+						<div id="info" role="tabpanel" aria-labelledby="info-tab">
+							<div class="mb-5">
+								<h2 class="text-xl font-bold mb-1 dark:text-white">File</h2>
+								<p class="text-red-500 dark:text-red-400">{{$activeClass}}</p>
+							</div>
+							<div class="mb-5">
+								<h2 class="text-xl font-bold mb-2 dark:text-white">Methods</h2>
+								<div class="border border-gray-300 dark:border-slate-600">
+									@foreach($methods as $key => $method)
+									<div class="accordion-item animated slideInRight">
+										<p class="accordion-header text-lg text-blue-400 px-4 py-2 border-t-[1px] border-gray-300 dark:border-slate-600 dark:bg-slate-800">
+											{{ $method['name'].'()' }}
+										<span></span></p>
+										<div class="accordion-body bg-slate-100 dark:bg-slate-700 p-4 dark:text-white border">
+											<code>
+												{!! getMethodCode($activeClass, $method['name'])  !!}
+											</code>
+										</div>
 									</div>
+									@endforeach
 								</div>
-                                @endforeach
+							</div>
+						</div>
+						<div id="source" class="hidden" role="tabpanel" aria-labelledby="source-tab">
+							<div class="bg-slate-100 dark:bg-slate-700 p-4 rounded dark:text-white">
+									<pre>{{$sourceCode}}</pre>
 							</div>
 						</div>
 					</div>
-					<div id="source" class="hidden" role="tabpanel" aria-labelledby="source-tab">
-						<div class="bg-slate-100 dark:bg-slate-700 p-4 rounded">
-								<pre>{{$sourceCode}}</pre>
-						</div>
+				@else
+					<div class="bg-white dark:bg-slate-800 p-8 w-1/2 m-auto mt-[20%] text-center dark:text-white">
+						<h1 class="text-5xl text-center mb-8">Laravel Code Insights</h1>
+						<p class="text-1xl mb-2">This package serves as a code insight for Laravel applications.</p>
+						<p class="text-1xl">It presents a comprehensive list of controllers, repositories, models, traits, and helpers, allowing you to easily explore and access them. When selecting a controller, it displays its functions and corresponding source code. It also includes an optimization feature.</p>
 					</div>
-				</div>
+				@endif
+
+			</div>
+			<div class="p-4 left-0 fixed text-center dark:text-white w-full bg-white dark:bg-slate-800 clearfix" style="bottom: 0px">
+				<p>@2023 <a href="https://viitorcloud.com" target="_blank">ViitorCloud Technologies.</a> All rights reserved</p>
 			</div>
 		</div>
+		</div>
+
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
@@ -541,7 +468,7 @@ $(document).ready(function() {
       var hasMatchingSubItem = $(this).find('li').filter(function() {
         return $(this).text().toLowerCase().indexOf(searchQuery) > -1;
       }).length > 0;
-	  console.log(menuItemText.indexOf(searchQuery));
+
       if (menuItemText.indexOf(searchQuery) > -1 || hasMatchingSubItem) {
 		$('#module').addClass('active');
 		$("#moduleSecltion").css({ 'height' : '', 'display' : 'block' });
@@ -549,9 +476,6 @@ $(document).ready(function() {
         $(this).parents('li').show();
         $(this).show();
       }
-	  if(menuItemText.indexOf(searchQuery) == 0){
-		$("#moduleSecltion").css({ 'height' : '0px'})
-	  }
     });
   });
 });
