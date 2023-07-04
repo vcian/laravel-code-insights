@@ -12,12 +12,16 @@
 ## <p style="font-family: 'CustomFont';"><i class="fas fa-cog"></i> _Installation & Usage_</p>
 <br>
 <p style="font-family: 'CustomFont';">Requires <a href="https://php.net/releases/">[PHP 8.0+]</a> | <a href="https://laravel.com/docs/8.x"> [Laravel 8.0+]</a></p>
-<p style="font-family: 'CustomFont';">Require Laravel DB Auditor  using : <a href="https://getcomposer.org">[Composer]</a></p>
+<p style="font-family: 'CustomFont';">Require Laravel Code Insights  using : <a href="https://getcomposer.org">[Composer]</a></p>
 
 ```bash
 composer require --dev vcian/laravel-code-insights
 ```
 ## <p style="font-family: 'CustomFont';">_Usage_</p>
+
+php artisan vendor:publish --tag=public
+<br>
+select "Vcian\LaravelCodeInsights\CodeGeneratorServiceProvider"
 <br>
 <p style="font-family: 'CustomFont';">You can access Code Insights view via below route</p>
 <p style="font-family: 'CustomFont';"><b>Access Route:</b> <a href="#"> http://yourdomain.com/code-insights</a></p>
@@ -25,7 +29,7 @@ composer require --dev vcian/laravel-code-insights
 
 <p style="font-family: 'CustomFont';"><b>Note:</b></p>
 <p style="font-family: 'CustomFont';"> 1) Don't forget to replace your actual domain with "yourdomain.com"</p>
-<p style="font-family: 'CustomFont';"> 2) You can also update your custom route with config/data-brigin.php</p>
+<p style="font-family: 'CustomFont';"> 2) You can also update your custom route with config/code-insights.php</p>
 
 ![img.png](img.png)
 
