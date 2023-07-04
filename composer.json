@@ -4,7 +4,9 @@
     "keywords": [
         "document",
         "generator",
+        "code",
         "controllers",
+        "models",
         "methods",
         "laravel",
         "access",
