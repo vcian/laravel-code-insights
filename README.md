@@ -33,6 +33,10 @@ select "Vcian\LaravelCodeInsights\CodeGeneratorServiceProvider"
 
 ![img.png](img.png)
 
+<p><img src="https://raw.githubusercontent.com/vcian/art/main/laravel-code-insights/ss-1.png" width="100%"></p>
+<p><img src="https://raw.githubusercontent.com/vcian/art/main/laravel-code-insights/ss-2.png" width="100%"></p>
+<p><img src="https://raw.githubusercontent.com/vcian/art/main/laravel-code-insights/ss-3.png" width="100%"></p>
+
 ## <p style="font-family: 'CustomFont';">_Changelog_</p>
 
 
